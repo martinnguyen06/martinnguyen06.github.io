@@ -4,7 +4,7 @@ date: 2025-03-04 22:28:00 -0800
 categories: [Home lab]
 tags: [cybersecurity, linux, kali, siem, soar, windows, sysmon, splunk, home lab, threat, nmap, msfvenom, virtualbox, metasploit]
 image: assets/img/threat_detection_and_monitoring_home_lab/threat detection and monitoring.png
-description: summary of the post.
+description: A basic home lab with Splunk as SIEM
 ---
 
 This project focuses on building a home cybersecurity lab to generate and analyze security events, providing a hands-on learning experience in cybersecurity concepts and practical skills. The lab will simulate a real-world attack scenario, allowing us to understand how attackers operate and how to detect and analyze their activities.
