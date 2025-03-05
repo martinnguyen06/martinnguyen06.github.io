@@ -4,6 +4,7 @@ date: 2025-03-04 22:28:00 -0800
 categories: [Home lab]
 tags: [cybersecurity, linux, kali, siem, soar, windows, sysmon, splunk, home lab, threat, nmap, msfvenom, virtualbox, metasploit]
 image: assets/img/threat_detection_and_monitoring_home_lab/threat detection and monitoring.png
+description: summary of the post.
 ---
 
 This project focuses on building a home cybersecurity lab to generate and analyze security events, providing a hands-on learning experience in cybersecurity concepts and practical skills. The lab will simulate a real-world attack scenario, allowing us to understand how attackers operate and how to detect and analyze their activities.
@@ -27,7 +28,7 @@ We'll utilize **VirtualBox** as our virtualization software to create two virtua
 - **Kali Linux VM**: This VM will serve as the attacker machine, providing a platform for using various security tools to simulate attacks.
 - **Windows VM**: This VM will act as the target machine, allowing us to observe the impact of attacks and analyze the generated security events.
 
-The instruction for installing VirtualBox can be found [here](). 
+The instruction for installing VirtualBox can be found here. 
 
 ### 1.1 Creating the Kali Linux VM
 Go to [Kali download page ](https://kali.org/get-kali/#kali-platforms), choose **Virtual Machines** to download the Kali VM image.
@@ -87,15 +88,15 @@ Launch VirtualBox and select the **New** button. The **Create Virtual Machine** 
 
 And check for the option of **Skip Unattended Installation**
 
-![win-createVM](assets/img/threat_detection_and_monitoring_home_lab/win-createVM.png){:.post-image-50 style="border-radius: 8px;"}
+![win-createVM](assets/img/threat_detection_and_monitoring_home_lab/win-createVM.png){:.post-image-80 style="border-radius: 8px;"}
 
 For the **Hardware** section, we configure our VM specifications. These configuration are relying our computer's specifiactions. Here, I set the **Base Memory** to be **4 GB (4096 Mb)** and allocate **1 processor**.  
 
-![win-createVM-1](assets/img/threat_detection_and_monitoring_home_lab/win-createVM-1.png){:.post-image-50 style="border-radius: 8px;"}
+![win-createVM-1](assets/img/threat_detection_and_monitoring_home_lab/win-createVM-1.png){:.post-image-80 style="border-radius: 8px;"}
 
 We also set 50 GB for the hard disk and click **Finish**
 
-![win-createVM-2](assets/img/threat_detection_and_monitoring_home_lab/win-createVM-2.png){:.post-image-50 style="border-radius: 8px;"}
+![win-createVM-2](assets/img/threat_detection_and_monitoring_home_lab/win-createVM-2.png){:.post-image-80 style="border-radius: 8px;"}
 
 After creating the Windows VM, we start it and follow the on-screen instructions to install Windows. For this lab, we need to install Sysmon and Splunk on this Windows VM. Detailed instructions for installing Sysmon and Splunk can be found in their respective documentation.
 
@@ -103,15 +104,15 @@ After creating the Windows VM, we start it and follow the on-screen instructions
 
 In this home lab, we need our VMs, Kali and Windows 10, to be able to directly communicate with each other. To achieve this, we'll configure them on the same internal network.  For each VM, access its settings and select **Network** from the left-hand menu. Then, choose **Internal Network** as the **Attached to** option and provide a name for our internal network, in my case is **martin**.  Click **OK** to save the settings.    
 
-![win-connection](assets/img/threat_detection_and_monitoring_home_lab/win-connection.png){:.post-image-50 style="border-radius: 8px;"}
+![win-connection](assets/img/threat_detection_and_monitoring_home_lab/win-connection.png){:.post-image-80 style="border-radius: 8px;"}
 
 On the Kali VM, right-click on the network icon in the top-right corner, select **Edit Connections** (1) click on **Wired connection 1** (2) and then select the gear icon (3).  
 
-![kali-edit-connection](assets/img/threat_detection_and_monitoring_home_lab/kali-edit-connection.png){:.post-image-50 style="border-radius: 8px;"}
+![kali-edit-connection](assets/img/threat_detection_and_monitoring_home_lab/kali-edit-connection.png){:.post-image-80 style="border-radius: 8px;"}
 
 In the **Editing Wired connection 1** wizard, click on **IPv4 Settings**. We choose the **Method** is **Manual** and add an address of `192.168.100.11` with Netmask is 24. We keep **Gateway**, **DNS servers** and **Search domains** blank. Click **Save** to apply the settings.    
 
-![kali-connection-1](assets/img/threat_detection_and_monitoring_home_lab/kali-connection-1.png){:.post-image-50 style="border-radius: 8px;"}
+![kali-connection-1](assets/img/threat_detection_and_monitoring_home_lab/kali-connection-1.png){:.post-image-80 style="border-radius: 8px;"}
 
 On the Windows 10 VM, right-click the network icon in the bottom-right corner and select **Open Network & Internet Settings**. Then, select **Change adapter options** right-click on **Ethernet** click **Properties** and select **Internet Protocol Version 4 (TCP/IPv4)** followed by **Properties**  Choose **Use the following IP address** enter the IP address as `192.168.100.10` and set the subnet mask to `255.255.255.0`.  Click **OK** to save the settings.    
 
