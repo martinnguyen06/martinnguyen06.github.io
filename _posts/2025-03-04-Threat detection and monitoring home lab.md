@@ -30,7 +30,7 @@ We'll utilize **VirtualBox** as our virtualization software to create two virtua
 The instruction for installing VirtualBox can be found [here](). 
 
 ### 1.1 Creating the Kali Linux VM
-Go to [Kali download page ](http://kali.org/get-kali/#kali-platforms), choose **Virtual Machines** to download the Kali VM image.
+Go to [Kali download page ](https://kali.org/get-kali/#kali-platforms), choose **Virtual Machines** to download the Kali VM image.
 
 ![kali-download-image](assets/img/threat_detection_and_monitoring_home_lab/kali-download-image.png){:.post-image-80 style="border-radius: 8px;"}
 
