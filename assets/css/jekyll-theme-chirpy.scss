@@ -1,0 +1,25 @@
+---
+---
+
+@use 'main
+{%- if jekyll.environment == 'production' -%}
+  .bundle
+{%- endif -%}
+';
+
+/* append your custom style below */
+.post-image-80 {
+  width: 80%;
+  height: auto;
+  #display: block; // Ensures the image behaves as a block element
+  margin: 0 auto; // Centers the image horizontally
+  border-radius: 6px; 
+}
+
+.post-image-50 {
+  width: 50%;
+  height: auto;
+  #display: block; // Ensures the image behaves as a block element
+  margin: 0 auto; // Centers the image horizontally
+  border-radius: 6px; 
+}
