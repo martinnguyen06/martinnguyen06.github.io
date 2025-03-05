@@ -129,7 +129,8 @@ nmap -A 192.168.100.10 -Pn
 ```
 This command performs a comprehensive scan, including OS detection, version detection, script scanning, and traceroute. The -A flag enables OS detection, version detection, script scanning, and traceroute.
 
-![kali-nmap](assets/img/threat_detection_and_monitoring_home_lab/kali-nmap.png)
+![kali-nmap](assets/img/threat_detection_and_monitoring_home_lab/kali-nmap.png){:.post-image-80 style="border-radius: 8px;"}
+
 The output provide valuable information about the **Windows 10** machine, such as open ports, running services, operating system, and potential vulnerabilities. From the output here we can see some ports are opened including 3389 (), 135, 139, 445.
 
 ### 2.2 Generating a Malicious Payload with MSFvenom
