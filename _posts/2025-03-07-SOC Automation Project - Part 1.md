@@ -87,7 +87,7 @@ nano /var/ossec/etc/ossec.conf
 ```
 We locate the `<logall>` and `<logall_json>` tags within the `<ossec_config>` section. Then, change the value of both tags to **yes** to enable full logging. 
 
-![ossec-file-logall-logalljson](assets/img/soc_automation-project/ossec-file-logall-logalljson.jpg){:.post-image-80 style="border-radius: 8px;"}
+![ossec-file-logall-logalljson](assets/img/soc_automation-project/ossec-file-logall-logalljson.jpeg){:.post-image-80 style="border-radius: 8px;"}
 
 We now save `ossec.conf` file and restart the Wazuh manager service to apply the changes: systemctl restart wazuh-manager.service
 #### Configuring Filebeat
