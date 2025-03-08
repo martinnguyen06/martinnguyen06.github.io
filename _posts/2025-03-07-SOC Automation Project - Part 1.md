@@ -3,8 +3,8 @@ title: SOC Automation Project - Part 1
 date: 2025-03-07 08:40:00 -0800
 categories: [Home lab, SOC Automation Project]
 tags: [cybersecurity, siem, soar, windows, sysmon, splunk, thehive, wazuh, shuffle, virustotal, home lab, virtualbox]
-image: assets/img/soc_automation-project/SOC-Automation-Project-banner.png
-description: A basic home lab with Splunk as SIEM
+image: assets/img/soc_automation-project/SOC-Automation-Project-banner-1.png
+description: SOC automation with Wazuh, TheHive and Shuffle
 ---
 
 This project outlines the construction of a **Security Operations Center (SOC)** environment using industry-standard, free, and open-source tools. Participants will deploy a Windows virtual machine and configure it to forward critical security events to Wazuh, a security monitoring platform.  Furthermore, we'll integrate Shuffle, an automation framework, to enable automated incident response.  These automated responses will include enriching event data with threat intelligence from online sources, creating a documented record of the event within a case management system, and notifying security analysts via email. This comprehensive approach empowers analysts to effectively investigate and remediate security issues.
